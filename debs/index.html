@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>越狱资源分享</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 50px;
+        }
+
+            ul li {
+                line-height: 2.3
+            }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+ $("body").click(function(e) {
+ var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+ var $i = $("<span/>").text(a[a_idx]);
+ a_idx = (a_idx + 1) % a.length;
+ var x = e.pageX,
+ y = e.pageY;
+ $i.css({
+ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+ "top": y - 20,
+ "left": x,
+ "position": "absolute",
+ "font-weight": "bold",
+ "color": "#ff6651"
+ });
+ $("body").append($i);
+ $i.animate({
+ "top": y - 180,
+ "opacity": 0
+ },
+ 1500,
+ function() {
+ $i.remove();
+ });
+ });
+});
+</script>
+    <a href="bg.jpg"><body background="bg.jpg" style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;"></a>
+    <div class="container">
+        <h1><p align="center">IOS越狱资源分享</p></h1>
+        <h1><a href="/igg"><font color="ff0000">igg修改器代码</font></a></h1>
+        <h2>3.26 更新</h2>
+        <li><h3><a href="/dl/解决hosts无效.deb" target="_blank"> 解决hosts无效.deb </a></h3></li>
+        <h2>3.25 更新</h2>
+        <li><h3><a href="/dl/自瞄无后除草速降.deb" target="_blank">自瞄无后除草速降.deb</a></h3></li>
+        <h1><center>插件来自于网络 仅供学习交流 <p>如有侵权请联系删除</center></h1>
+</body>
+</html>
